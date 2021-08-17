@@ -152,3 +152,7 @@ footer span {
         width: 80%;
     }
 }
+
+button {
+    cursor: pointer;
+}
