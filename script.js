@@ -5,7 +5,7 @@ const resultado = document.getElementById("resultado");
 const nome = document.getElementById("nome");
 
 function calcularImc() {
-    const imc = parseFloat(peso.value) / ( parseFloat(altura.value) ** 2);
+    const imc = (parseFloat(peso.value) / (parseFloat(altura.value) ** 2)).toFixed(1);
     
     if (imc < 18.5) {
         resultado.textContent = nome.value + ", seu IMC é " + imc + ". Você está abaixo do peso.";
@@ -24,20 +24,3 @@ function calcularImc() {
 }
 
 calcular.addEventListener("click", calcularImc);
-
-// if (imc.value < 18.5) {
-//     calcularImc;
-//     resultado.textContent = nome + ", seu IMC é " + calcularImc.imc + ". Você está abaixo do peso."
-// } else {
-//     alert ("ta errado nega")
-// }
-
-// function abaixoDoPeso() {
-//     if (resultado.value < 18.5) {
-//         alert("Seu IMC é de " + resultado.value + ". Você está abaixo do peso.")
-//     } else {
-//         alert("Preencha todos os campos!");
-//     }
-// }
-
-// calcular.addEventListener("click", abaixoDoPeso);
