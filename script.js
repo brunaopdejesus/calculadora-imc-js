@@ -5,7 +5,7 @@ const resultado = document.getElementById("resultado");
 
 function calcularImc() {
     const imc = parseFloat(peso.value) / ( parseFloat(altura.value) ** 2);
-    resultado.textContent = imc;
+    resultado.textContent = "Seu IMC é " + imc;
 }
 
 calcular.addEventListener("click", calcularImc);
